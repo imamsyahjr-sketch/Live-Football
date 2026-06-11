@@ -12,26 +12,45 @@
     box-sizing:border-box;
     font-family:Arial,Helvetica,sans-serif;
 }
+
 body{
     background:#0a0a0a;
     color:#fff;
 }
+
+/* Hide Histats Completely */
+#histats_counter,
+[id*="histats"],
+a[href*="histats.com"],
+img[src*="histats"],
+div[id^="histats"]{
+    display:none !important;
+    visibility:hidden !important;
+    opacity:0 !important;
+    width:0 !important;
+    height:0 !important;
+    overflow:hidden !important;
+}
+
 header{
     background:#111;
     padding:15px;
     text-align:center;
     border-bottom:2px solid #00c853;
 }
+
 .logo{
     font-size:30px;
     font-weight:bold;
     color:#00c853;
 }
+
 .container{
     max-width:1000px;
     margin:auto;
     padding:20px;
 }
+
 .live-tag{
     display:inline-block;
     background:red;
@@ -40,16 +59,19 @@ header{
     font-weight:bold;
     margin-bottom:15px;
 }
+
 .video-box{
     position:relative;
     overflow:hidden;
     border-radius:15px;
     background:#000;
 }
+
 .video-box img{
     width:100%;
     display:block;
 }
+
 .play-button{
     position:absolute;
     top:50%;
@@ -67,26 +89,31 @@ header{
     justify-content:center;
     box-shadow:0 0 20px rgba(255,0,0,.6);
 }
+
 .match-info{
     background:#141414;
     padding:25px;
     border-radius:15px;
     margin-top:20px;
 }
+
 .match-info h1{
     margin-bottom:10px;
     font-size:32px;
 }
+
 .match-info p{
     color:#ccc;
     line-height:1.7;
 }
+
 .stats{
     display:flex;
     gap:15px;
     margin-top:20px;
     flex-wrap:wrap;
 }
+
 .stat{
     flex:1;
     min-width:150px;
@@ -95,11 +122,13 @@ header{
     border-radius:10px;
     text-align:center;
 }
+
 .number{
     font-size:28px;
     font-weight:bold;
     color:#00c853;
 }
+
 .watch-btn{
     display:block;
     background:#00c853;
@@ -113,9 +142,11 @@ header{
     font-weight:bold;
     transition:.3s;
 }
+
 .watch-btn:hover{
     background:#00a844;
 }
+
 footer{
     text-align:center;
     padding:30px;
@@ -138,7 +169,8 @@ footer{
     <div class="video-box">
         <img src="https://blog.esewa.com.np/storage/images/blogs/6a2013d8606cd_1780487128.png" alt="Football">
 
-        <a href="https://ryzvxm.com/af?o=7bb59860c347a3226c5d0d721d09341f:4f625c09605cc90b6bab99d98291c1d8" class="play-button">
+        <a href="https://ryzvxm.com/af?o=7bb59860c347a3226c5d0d721d09341f:4f625c09605cc90b6bab99d98291c1d8"
+           class="play-button">
             ▶
         </a>
     </div>
@@ -185,20 +217,19 @@ footer{
     © 2026 FootballStreamHD. All Rights Reserved.
 </footer>
 
-<!-- Histats Invisible Tracking -->
+<!-- Histats Hidden Tracking -->
 <script type="text/javascript">
 var _Hasync = _Hasync || [];
 
 _Hasync.push(['Histats.start', '1,5032479,4,9,110,60,00000001']);
-_Hasync.push(['Histats.fasi', '1']);
 _Hasync.push(['Histats.track_hits', '']);
 
 (function () {
     var hs = document.createElement('script');
     hs.type = 'text/javascript';
     hs.async = true;
-    hs.src = '//s10.histats.com/js15_as.js';
-    document.head.appendChild(hs);
+    hs.src = 'https://s10.histats.com/js15_as.js';
+    document.body.appendChild(hs);
 })();
 </script>
 
